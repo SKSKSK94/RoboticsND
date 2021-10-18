@@ -52,4 +52,4 @@ export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:<path_to_build_folder>
 export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:/home/RoboticsND/P1_Build_My_World/build
 ```
 7. Go back to the project folder `P1_Build_My_World`
-8. Launch Gazebo world by `gazebo world/UdacityOffice`
+8. Launch Gazebo world by `gazebo world/office_world`
