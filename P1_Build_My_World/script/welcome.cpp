@@ -6,7 +6,7 @@ namespace gazebo
   {
     public: WorldPluginMyRobot() : WorldPlugin()
     {
-        printf("Welcome to myOffice’s World!\n");
+        printf("Welcome to seokhun’s World!\n");
     }
 
 		// This load function is mandatory and should always be included

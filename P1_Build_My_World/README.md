@@ -1,6 +1,6 @@
 # Project 1 : Build My World
 This repository is the project 1 of Udacity Robotics Software Engineer Nanodegree Program
-![image](https://user-images.githubusercontent.com/73100569/137704090-e30dbb05-466e-492c-b8d6-d8e052aa9b88.png)
+![image](https://user-images.githubusercontent.com/73100569/137753464-32b142cd-d045-49ce-acbc-468c20b48f3e.png)
 
 ## Overview
 In this project you'll create your simulation world in Gazebo for all your upcoming projects in the [Udacity Robotics Software Engineer Nanodegree Program](https://www.udacity.com/course/robotics-software-engineer--nd209).
