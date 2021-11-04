@@ -68,8 +68,9 @@ In this project you'll create two ROS packages inside your `catkin_ws/src`: the 
 2. Clone this repository as below structure:
   ```bash
   catkin_ws                              # your catkin workspace
-      ├── my_robot                       # my_robot package                   
-      ├── ball_chaser                    # ball_chaser package           
+      ├── src                             
+      │   ├── my_robot                       # my_robot package                   
+      │   └── ball_chaser                    # ball_chaser package           
       └── ...
   ```
 3. Compile it with:

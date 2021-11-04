@@ -108,10 +108,12 @@ In this project you'll utilize ROS AMCL (Adaptive Monte Carlo Localization) pack
 1. Make sure you have installed `Build Dependencies`:
 2. Clone this repository as below structure:
    ```bash
-   catkin_ws                             # your catkin workspace
-      ├── my_robot                       # my_robot package                   
-      ├── pgm_map_creator                # pgm_map_creator package      
-      ├── teleop_twist_keyboard          # teleop_twist_keyboard package           
+   catkin_ws                                 # your catkin workspace
+      ├── src                         
+      │   ├── my_robot                       # my_robot package                   
+      │   ├── pgm_map_creator                # pgm_map_creator package      
+      │   ├── teleop_twist_keyboard          # teleop_twist_keyboard package          
+      │   ├── ...     
       └── ...
    ```
 3. Compile it with:
