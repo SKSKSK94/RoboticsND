@@ -27,7 +27,7 @@ For this project we will be using the `rtabmap_ros` package, which is a ROS wrap
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools]((https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
-  * 
+  
 * ROS rtabmap-ros package  
    ```bash
    # if kinetic,

@@ -19,3 +19,9 @@ Go to `P2_Go_Chase_It`.
 Utilize ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments. 
 
 Go to `P3_Where_Am_I`.
+
+#### Project 4: My My World
+
+Utilize ROS rtabmap_ros package for simultaneous localization and mapping (SLAM) of a mobile robot in the Gazebo simulation environments. 
+
+Go to `P4_Map_My_World`.
