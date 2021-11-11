@@ -22,6 +22,6 @@ Go to `P3_Where_Am_I`.
 
 #### Project 4: My My World
 
-Utilize ROS rtabmap_ros package for simultaneous localization and mapping (SLAM) of a mobile robot in the Gazebo simulation environments. 
+Utilize ROS rtabmap_ros package for Simultaneous Localization and Mapping (SLAM) of a mobile robot in the Gazebo simulation environments. 
 
 Go to `P4_Map_My_World`.
