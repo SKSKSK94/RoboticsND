@@ -1,14 +1,22 @@
 # Project 4 : Map My World
 This repository is the project 4 of Udacity Robotics Software Engineer Nanodegree Program
 
-![full](https://user-images.githubusercontent.com/73100569/141305682-ec32555f-17bb-4ece-b730-4f471ca0b594.png)
+RTAB-MAP viewer             | 3D Maps
+:-------------------------:|:-------------------------:
+![1_full_image](https://user-images.githubusercontent.com/73100569/141422158-4a4dc65d-89a3-44e6-9a8e-8d4b54052a31.png)  |  ![3_3D_map](https://user-images.githubusercontent.com/73100569/141422155-2e70749b-dbc3-4989-a5f7-bc86295c405b.png)
 
-![feature_matching](https://user-images.githubusercontent.com/73100569/141305674-6acab41a-945c-48f3-a153-bbddcf3ecffb.png)
+Feature matching for loop closure detection             |
+:-------------------------:|
+![2_feature_matching](https://user-images.githubusercontent.com/73100569/141422162-eab01ccc-f32f-41a4-b39c-e6cc0749a50c.png)|
 
 ## Overview
 
 In this project you will create a 2D occupancy grid and 3D octomap from a simulated environment using your own robot with the RTAB-Map package.  
-RTAB-Map (Real-Time Appearance-Based Mapping) is a popular solution for SLAM to develop robots that can map environments in 3D. RTAB-Map has good speed and memory management, and it provides custom developed tools for information analysis. Most importantly, the quality of the documentation on ROS Wiki (http://wiki.ros.org/rtabmap_ros) is very high. Being able to leverage RTAB-Map with your own robots will lead to a solid foundation for mapping and localization well beyond this Nanodegree program.  
+- RTAB-Map (Real-Time Appearance-Based Mapping) is a popular solution for SLAM to develop robots that can map environments in 3D. 
+- The robot uses camera data to recognize previously visited areas in the map using a graph-based SLAM approach known as Real-Time Appearance Based (RTAB) mapping (Here, bag-of-words is used for loop closure detection). 
+- RTAB-Map has good speed and memory management, and it provides custom developed tools for information analysis. 
+- Most importantly, the quality of the documentation on ROS Wiki (http://wiki.ros.org/rtabmap_ros) is very high. 
+- Being able to leverage RTAB-Map with your own robots will lead to a solid foundation for mapping and localization well beyond this Nanodegree program.  
 
 For this project we will be using the `rtabmap_ros` package, which is a ROS wrapper (API) for interacting with RTAB-Map. Keep this in mind when looking at the relative documentation.  
 * You will develop your own package to interface with the rtabmap_ros package.  
@@ -38,7 +46,7 @@ For this project we will be using the `rtabmap_ros` package, which is a ROS wrap
 
 ## Structure
 ```bash
-.P4_Map_My_World                                     # Where Am I Project
+.P4_Map_My_World                                   # Where Am I Project
     ├── my_robot                                   # my_robot package                  
     │   ├── config                                 # config folder for configuration files of move_base package
     │   │   ├── __MACOSX
@@ -72,7 +80,7 @@ For this project we will be using the `rtabmap_ros` package, which is a ROS wrap
 ```
 
 ## Download Database
-You can download the database I already generated in this project at google drive [here](https://drive.google.com/file/d/1OfzN0tMGXHmWJVkqjovUTaXFkU6kXeJ8/view?usp=sharing).
+You can download the database I already generated in this project at google drive [here](https://drive.google.com/file/d/1vKhzi5icmUn5H4HlJ7732i9JeCs9JWWW/view).
 
 ## Build and Run Instructions
 1. Make sure you have installed `Build Dependencies`:
