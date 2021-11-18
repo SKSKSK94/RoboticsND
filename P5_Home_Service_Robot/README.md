@@ -82,6 +82,7 @@ In this project, you will use everything you learned in the Nanodegree Program t
     │   ├── test_navigation.sh                     # shell script to test localization and navigation
     │   └── test_slam.sh                           # shell script to test SLAM
     ├── slam_gmapping                              # slam gmapping package
+    ├── spawn_home_service_world                   # spawn home service world package
     ├── turtlebot3                                 # turtlebot3 package
     ├── turtlebot3_simulations                     # turtlebot3_simulations package
     ├── worlds                                     # world files for simulation
@@ -89,27 +90,46 @@ In this project, you will use everything you learned in the Nanodegree Program t
 ```
 
 
-## Build and Run Instructions
-1. Make sure you have installed `Build Dependencies`:
-   
-2. Clone this repository as below structure:
+## Build and Run Instructions   
+1. Clone this repository as below structure:
    ```bash
    catkin_ws                                 # your catkin workspace
       ├── src                         
-      │   ├── P5_Home_Service_Robot           
-      │   │   ├── add_markers                            
-      │   │   ├── maps                                 
-      │   │   ├── params                            
-      │   │   ├── pick_objects                            
-      │   │   ├── rvizConfig                            
-      │   │   ├── scripts                            
-      │   │   ├── slam_gmapping                            
-      │   │   ├── turtlebot3                             
-      │   │   ├── turtlebot3_simulations                             
-      │   │   ├── worlds         
-      │   │   ├── ...     
+      │   ├── RoboticsND   
+      │   │   ├── P5_Home_Service_Robot           
+      │   │   │   ├── add_markers                            
+      │   │   │   ├── maps                                 
+      │   │   │   ├── params                            
+      │   │   │   ├── pick_objects                            
+      │   │   │   ├── rvizConfig                            
+      │   │   │   ├── scripts                            
+      │   │   │   ├── slam_gmapping                            
+      │   │   │   ├── turtlebot3                                          
+      │   │   │   ├── worlds         
+      │   │   │   ├── ...     
       └─ ...
    ```
+
+2. Make sure you have installed `Build Dependencies`: 
+   - `turtlebot3_simulations` 
+      ```bash
+      $ cd /home/workspace/catkin_ws/src/RoboticsND/P5_Home_Service_Robot
+
+      # for kinetic
+      $ git clone -b kinetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+
+      # for melodic
+      $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+      ```
+   - `turtlebot3_msgs`
+      ```bash
+      $ cd /home/workspace/catkin_ws/src/RoboticsND/P5_Home_Service_Robot
+      $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs
+      ```
+   - `rospkg`
+      ```bash
+      $ pip install rospkg
+      ```
 
 3. Compile it with:
    ```bash
@@ -120,29 +140,29 @@ In this project, you will use everything you learned in the Nanodegree Program t
 4. For manually testing SLAM:
    ```bash
    $ cd /home/workspace/catkin_ws/
-   $ src/P5_Home_Service_Robot/scripts/test_slam.sh 
+   $ src/RoboticsND/P5_Home_Service_Robot/scripts/test_slam.sh 
    ```
 
 5. For starting the simulation world with turtlebot3, movebase and teleop:
    ```bash
    $ cd /home/workspace/catkin_ws/
-   $ src/P5_Home_Service_Robot/scripts/test_navigation.sh 
+   $ src/RoboticsND/P5_Home_Service_Robot/scripts/test_navigation.sh 
    ```
 
 6. For autonomously commanding the turtlebot3 to travel to both desired pickup and drop off zones:
    ```bash
    $ cd /home/workspace/catkin_ws/
-   $ src/P5_Home_Service_Robot/scripts/pick_objects.sh 
+   $ src/RoboticsND/P5_Home_Service_Robot/scripts/pick_objects.sh 
    ```
 
 7. For creating a virtual object in rviz:
    ```bash
    $ cd /home/workspace/catkin_ws/
-   $ src/P5_Home_Service_Robot/scripts/add_markers.sh
+   $ src/RoboticsND/P5_Home_Service_Robot/scripts/add_markers.sh
    ```
 
 8. For complete simulation of home service robot:
    ```bash
    $ cd /home/workspace/catkin_ws/
-   $ src/P5_Home_Service_Robot/scripts/home_service.sh
+   $ src/RoboticsND/P5_Home_Service_Robot/scripts/home_service.sh
    ```
