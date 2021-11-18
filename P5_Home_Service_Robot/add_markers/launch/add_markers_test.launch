@@ -1,0 +1,9 @@
+<launch>
+    <!-- rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find add_markers)/../rvizConfig/rviz_with_marker.rviz"/>
+
+    <!-- add_markers -->
+    <node pkg="add_markers" name="add_markers_test" type="add_markers_test">
+        <rosparam file="$(find add_markers)/../params/goal.yaml" command="load"/>
+    </node>
+</launch>
