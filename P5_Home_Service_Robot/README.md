@@ -84,7 +84,6 @@ In this project, you will use everything you learned in the Nanodegree Program t
     ├── slam_gmapping                              # slam gmapping package
     ├── spawn_home_service_world                   # spawn home service world package
     ├── turtlebot3                                 # turtlebot3 package
-    ├── turtlebot3_simulations                     # turtlebot3_simulations package
     ├── worlds                                     # world files for simulation
     │   └── home_service.world
 ```
@@ -103,7 +102,8 @@ In this project, you will use everything you learned in the Nanodegree Program t
       │   │   │   ├── pick_objects                            
       │   │   │   ├── rvizConfig                            
       │   │   │   ├── scripts                            
-      │   │   │   ├── slam_gmapping                            
+      │   │   │   ├── slam_gmapping                      
+      │   │   │   ├── spawn_home_service_world                            
       │   │   │   ├── turtlebot3                                          
       │   │   │   ├── worlds         
       │   │   │   ├── ...     
